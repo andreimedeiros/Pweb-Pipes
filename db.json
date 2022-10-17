@@ -18,19 +18,19 @@
       "id": 0,
       "codigo": 64234,
       "nome": "Sim City",
-      "genero": "Estratégia/Simulação"
+      "genero": "Gerenciamento"
     },
     {
       "id": 1,
       "codigo": 12567,
       "nome": "Age of Empires",
-      "genero": "Estratégia/RTS"
+      "genero": "Estratégia"
     },
     {
       "id": 2,
       "codigo": 25456,
       "nome": "Diablo II",
-      "genero": "RPG/Hack & Slash"
+      "genero": "RPG"
     }
   ]
 }

@@ -26,6 +26,6 @@ export class CadastroGameComponent implements OnInit {
 
   adicionarGame(): void {
     this.gameService.inserir(this.game)
-    this.user = new Game();
+    this.game = new Game();
   }
 }

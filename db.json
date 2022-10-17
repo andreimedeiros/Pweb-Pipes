@@ -1,17 +1,36 @@
 {
   "users": [
-      {
-          "id":0,
-          "nome": "Admin",
-          "idade": 25,
-          "email": "admin@gmail.com"
-  
-      },
-      {
-          "id":1,
-          "nome": "sub-admin",
-          "idade": 24,
-          "email": "subadmin@gmail.com"
-      }
+    {
+      "id": 0,
+      "nome": "Admin",
+      "idade": 25,
+      "email": "admin@gmail.com"
+    },
+    {
+      "id": 1,
+      "nome": "sub-admin",
+      "idade": 24,
+      "email": "subadmin@gmail.com"
+    }
+  ],
+  "games": [
+    {
+      "id": 0,
+      "codigo": 64234,
+      "nome": "Sim City",
+      "genero": "Estratégia/Simulação"
+    },
+    {
+      "id": 1,
+      "codigo": 12567,
+      "nome": "Age of Empires",
+      "genero": "Estratégia/RTS"
+    },
+    {
+      "id": 2,
+      "codigo": 25456,
+      "nome": "Diablo II",
+      "genero": "RPG/Hack & Slash"
+    }
   ]
 }

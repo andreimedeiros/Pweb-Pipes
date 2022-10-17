@@ -1,0 +1,17 @@
+{
+  "users": [
+      {
+          "id":0,
+          "nome": "Admin",
+          "idade": 25,
+          "email": "admin@gmail.com"
+  
+      },
+      {
+          "id":1,
+          "nome": "sub-admin",
+          "idade": 24,
+          "email": "subadmin@gmail.com"
+      }
+  ]
+}

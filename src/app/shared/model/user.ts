@@ -1,11 +1,11 @@
 class User {
-    id: string = "andrei";
+    nome: string;
     idade: number;
     email: string;
 
 
-    constructor(id: string, idade: number, email: string,) {
-        this.id = id;
+    constructor(nome: string, idade: number, email: string,) {
+        this.nome = nome;
         this.idade = idade;
         this.email = email;
 

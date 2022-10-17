@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Game } from 'src/app/shared/model/game';
+import { GameService } from 'src/app/shared/services/game/game.service';
 
 
 @Component({
@@ -10,12 +11,21 @@ import { Game } from 'src/app/shared/model/game';
 export class CadastroGameComponent implements OnInit {
 
   game: Game;
+  // games: Array<Game>;
 
-  constructor() { 
-    this.game = new Game(0,'','')
+  constructor(private gameService: GameService) { 
+    this.game = new Game();
+    // this.games = gameService.listar();
   }
+
+  
 
   ngOnInit(): void {
   }
 
+
+  adicionarGame(): void {
+    this.gameService.inserir(this.game)
+    this.user = new Game();
+  }
 }

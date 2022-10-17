@@ -1,11 +1,11 @@
 export class Game {
-    id: number;
+    codigo: number;
     nome: string;
     genero: string;
 
 
-    constructor(id: number, nome: string, genero: string) {
-        this.id = id;
+    constructor(codigo: number, nome: string, genero: string) {
+        this.codigo = codigo;
         this.nome = nome;
         this.genero = genero
     }

@@ -1,8 +1,10 @@
 <div class="menu">
     <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-    <mat-menu #menu="matMenu">
+    
+    <mat-menu #menu="matMenu" [overlapTrigger]="false">
         <button mat-menu-item [routerLink]="['/cadastrar-user']">Cadastrar Usuário</button>
         <button mat-menu-item [routerLink]="['/cadastrar-game']">Cadastrar Game</button>
+        
     </mat-menu>
 </div>
 

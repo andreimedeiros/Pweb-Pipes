@@ -5,10 +5,6 @@ import { MenuComponent } from './interface/menu/menu.component';
 import { CadastroUserComponent } from './users/cadastro-user/cadastro-user.component';
 
 const routes: Routes = [
-  // {
-  //   path:"",
-  //   component:HomeComponent
-  // },
   {
     path:"cadastrar-user",
     component: CadastroUserComponent

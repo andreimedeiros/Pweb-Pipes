@@ -1,0 +1,33 @@
+<mat-card class="cardCadastro">
+    <mat-card-header>
+        <mat-card-title>Cadastro de Usuário</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="formCadastro">
+            <mat-form-field class="inputUserCadastro" appearance="fill">
+                <mat-label>Nome</mat-label>
+                <input [(ngModel)]="user.id" name="userid"placeholder="Nome">
+            </mat-form-field>
+            <mat-form-field class="inputUserCadastro"  appearance="fill">
+                <mat-label>Idade</mat-label>
+                <input  matInput [(ngModel)]="user.idade" name="useridade" type="text" placeholder="idade">
+            </mat-form-field>
+            <mat-form-field class="inputUserCadastro" appearance="fill">
+                <mat-label>E-mail</mat-label>
+                <input  matInput [(ngModel)]="user.email" name="useremail" type="email"  placeholder="E-mail">
+                <mat-icon matSuffix>dit</mat-icon>
+              </mat-form-field>
+
+        </form>
+            <mat-card-actions>
+                <button id="botaocadastrar" mat-raised-button color="warn">Cadastrar</button>
+            </mat-card-actions> 
+    </mat-card-content>
+    
+   
+
+        
+        
+</mat-card>
+
+

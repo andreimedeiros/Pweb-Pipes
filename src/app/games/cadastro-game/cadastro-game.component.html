@@ -1,0 +1,34 @@
+<mat-card class="cardCadastro">
+    <mat-card-header>
+        <mat-card-title>Cadastrar novo Jogo</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="formCadastro">
+            
+            <mat-form-field class="inputGameCadastro" appearance="fill">
+                <mat-label>Nome</mat-label>
+                <input matInput [(ngModel)]="game.id" placeholder="Nome" type="text">
+            </mat-form-field>
+            <mat-form-field class="inputGameCadastro" appearance="fill">
+                <mat-label>Idade</mat-label>
+                <input  matInput [(ngModel)]="game.nome" type="text" placeholder="Nome do jogo">
+            </mat-form-field>
+            <mat-form-field class="inputGameCadastro" appearance="fill">
+                <mat-label>E-mail</mat-label>
+                <input  matInput [(ngModel)]="game.genero" type="email"  placeholder="Gênero">
+                <mat-icon matSuffix>dit</mat-icon>
+              </mat-form-field>
+
+        </form>
+            <mat-card-actions>
+                <button id="botaocadastrar" mat-raised-button color="warn">Cadastrar</button>
+            </mat-card-actions> 
+    </mat-card-content>
+    
+   
+
+        
+        
+</mat-card>
+
+

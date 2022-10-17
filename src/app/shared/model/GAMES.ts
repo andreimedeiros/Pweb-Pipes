@@ -1,6 +1,6 @@
 export const GAMES = [
     {
-        codigo: 064234,
+        codigo: 64234,
         nome: "Sim City",
         genero: "Estratégia/Simulação"
 

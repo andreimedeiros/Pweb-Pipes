@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Game } from 'src/app/shared/model/game';
 import { GameService } from 'src/app/shared/services/game/game.service';
 
@@ -9,13 +10,16 @@ import { GameService } from 'src/app/shared/services/game/game.service';
 })
 export class ListagemGameComponent implements OnInit {
 
-  games: Array<Game> ;
+  games: Game[] ;
 
-  constructor(private gameService: GameService) {
+  constructor(private gameService: GameService, private roteador: Router) {
+    this.games = new Array<Game>;
   }
   
   ngOnInit(): void {
-    this.games = this.gameService.listar();
+    this.gameService.listar().subscribe(
+      jogosobs => this.games = jogosobs
+    );
   }
 
 

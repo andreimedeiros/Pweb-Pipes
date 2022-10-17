@@ -1,7 +1,7 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CadastroGameComponent } from './games/cadastro-game/cadastro-game.component';
-import { MenuComponent } from './interface/menu/menu.component';
+import { ListagemGameComponent } from './games/listagem-game/listagem-game.component';
 import { CadastroUserComponent } from './users/cadastro-user/cadastro-user.component';
 
 const routes: Routes = [
@@ -12,6 +12,10 @@ const routes: Routes = [
   {
     path:"cadastrar-game",
     component: CadastroGameComponent
+  },
+  {
+    path:"games-list",
+    component:ListagemGameComponent
   }
 ];
 

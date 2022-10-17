@@ -17,7 +17,7 @@ export class CadastroUserComponent implements OnInit {
 
 
   constructor(private userService: UserService) { 
-    this.user = new User();
+    this.user = new User('',0,'');
     // this.users =  userService.listar()
 
   }
@@ -28,8 +28,10 @@ export class CadastroUserComponent implements OnInit {
 
 
   adicionarUser(): void {
-    this.userService.inserir(this.user)
-    this.user = new User();
+    this.userService.inserir(this.user).subscribe(
+      userobs => console.log(userobs)
+    )
+    this.user = new User('',0,'');
   }
 
 }

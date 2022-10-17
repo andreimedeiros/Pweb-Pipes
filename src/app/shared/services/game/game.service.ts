@@ -1,27 +1,27 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Game } from '../../model/game';
-import { GAMES } from '../../model/GAMES';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class GameService {
 
-  games: Array<Game>
+  
+  URL_GAME = "http://localhost:3000/games"
 
-
-  constructor() { 
-    this.games = GAMES
+  constructor(private httpClientGames : HttpClient) { 
+    
   }
 
+  listar(): Observable<Game[]> {
+      return this.httpClientGames.get<Game[]>(this.URL_GAME)
+  } 
 
-
-  listar(): Array<Game> {
-    return this.games
-  }
-
-  inserir(game: Game): void {
-    this.games.push(game)
+  inserir(game: Game): Observable<Game> {
+    return this.httpClientGames.post<Game>(this.URL_GAME, game);
   }
 
 }

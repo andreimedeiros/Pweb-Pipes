@@ -11,6 +11,12 @@
       "nome": "sub-admin",
       "idade": 24,
       "email": "subadmin@gmail.com"
+    },
+    {
+      "nome": "Ândrei",
+      "idade": "25",
+      "email": "borala@gmail.cm",
+      "id": 2
     }
   ],
   "games": [
@@ -31,6 +37,12 @@
       "codigo": 25456,
       "nome": "Diablo II",
       "genero": "RPG"
+    },
+    {
+      "codigo": "24567",
+      "nome": "Crusader Kings III",
+      "genero": "Grande Estratégia",
+      "id": 3
     }
   ]
 }

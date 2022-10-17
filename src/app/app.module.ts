@@ -8,6 +8,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { GamesModule } from './games/games.module';
 import { InterfaceModule } from './interface/interface.module';
+import { HttpClientModule } from '@angular/common/http';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 
 
 
@@ -16,14 +21,19 @@ import { InterfaceModule } from './interface/interface.module';
     AppComponent
   ],
   imports: [
+    MatInputModule,
     FormsModule,
     MaterialModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatButtonModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     UsersModule,
     GamesModule,
-    InterfaceModule
+    InterfaceModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

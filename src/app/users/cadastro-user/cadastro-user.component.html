@@ -6,7 +6,7 @@
         <form class="formCadastro">
             <mat-form-field class="inputUserCadastro" appearance="fill">
                 <mat-label>Nome</mat-label>
-                <input [(ngModel)]="user.nome" name="userid"placeholder="Nome">
+                <input matInput [(ngModel)]="user.nome" name="userid"placeholder="Nome">
             </mat-form-field>
             <mat-form-field class="inputUserCadastro"  appearance="fill">
                 <mat-label>Idade</mat-label>
@@ -19,10 +19,12 @@
               </mat-form-field>
 
         </form>
-            <mat-card-actions>
-                <button id="botaocadastrar" mat-raised-button color="warn">Cadastrar</button>
-            </mat-card-actions> 
     </mat-card-content>
+            <mat-card-actions>
+                <button id="botaocadastrar" mat-raised-button color="warn" (click)="adicionarUser()">Cadastrar</button>
+            </mat-card-actions> 
+
+
     
    
 

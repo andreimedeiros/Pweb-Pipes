@@ -4,6 +4,7 @@ import { MenuComponent } from './menu/menu.component';
 import { MaterialModule } from '../material/material.module';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -11,7 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    MenuComponent
+    MenuComponent,
+    HomeComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -20,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CommonModule
   ],
   exports: [
-    MenuComponent
+    MenuComponent,
+    HomeComponent
   ]
 })
 export class InterfaceModule { }

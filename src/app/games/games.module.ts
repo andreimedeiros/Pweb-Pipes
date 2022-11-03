@@ -7,6 +7,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { PipesModule } from '../shared/pipes/pipes.module';
 
 
 
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatFormFieldModule,
     MatInputModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    PipesModule
   ],
   exports: [
     CadastroGameComponent

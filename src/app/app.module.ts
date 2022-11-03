@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { PipesModule } from './shared/pipes/pipes.module';
 
 
 
@@ -21,6 +22,7 @@ import { MatInputModule } from '@angular/material/input';
     AppComponent
   ],
   imports: [
+    PipesModule,
     MatInputModule,
     FormsModule,
     MaterialModule,
@@ -33,7 +35,8 @@ import { MatInputModule } from '@angular/material/input';
     UsersModule,
     GamesModule,
     InterfaceModule,
-    HttpClientModule
+    HttpClientModule,
+    PipesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

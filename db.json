@@ -22,24 +22,24 @@
   "games": [
     {
       "id": 0,
-      "codigo": 64234,
+      "codigo": "111222333444",
       "nome": "Sim City",
       "genero": "Gerenciamento"
     },
     {
       "id": 1,
-      "codigo": 12567,
+      "codigo": "555666777888",
       "nome": "Age of Empires",
       "genero": "Estratégia"
     },
     {
       "id": 2,
-      "codigo": 25456,
+      "codigo": "111333444666",
       "nome": "Diablo II",
       "genero": "RPG"
     },
     {
-      "codigo": "24567",
+      "codigo": "22255588844",
       "nome": "Crusader Kings III",
       "genero": "Grande Estratégia",
       "id": 3
